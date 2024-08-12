@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="calculator-6546339-5376602.webp" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center w-100 vh-100">
+        <div class="calculator p-3 rounded">
+            <form>
+                <div class="display d-flex  justify-content-end mt-2 mb-2">
+                    <input type="text" name="display" class="rounded-1 ">
+                </div> 
+                <div>
+                    <input type="button" value="AC" onclick="display.value = '' " class="text-white bg-secondary" >
+                    <input type="button" value="DE" onclick="display.value =  display.value.toString().slice(0, -1)" class="text-white bg-secondary">
+                    <input type="button" value="." onclick="display.value += '.' " class="operator bg-secondary">
+                    <input type="button" value="/" onclick="display.value += '/' " class=" bg-warning text-white ">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="display.value += '7' " class="bg-secondary.bg-gradient ">
+                    <input type="button" value="8" onclick="display.value += '8' ">
+                    <input type="button" value="9" onclick="display.value += '9' ">
+                    <input type="button" value="*" onclick="display.value += '*' " class="text-white bg-warning ">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="display.value += '4' ">
+                    <input type="button" value="5" onclick="display.value += '5' ">
+                    <input type="button" value="6" onclick="display.value += '6' ">
+                    <input type="button" value="-" onclick="display.value += '-' " class="text-white bg-warning fs-1">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="display.value += '1' ">
+                    <input type="button" value="2" onclick="display.value += '2' ">
+                    <input type="button" value="3" onclick="display.value += '3' ">
+                    <input type="button" value="+" onclick="display.value += '+' " class="otext-white bg-warning">
+                </div>
+                <div>
+                    <input type="button" value="0" onclick="display.value += '0' " class="equal rounded-pill">
+                    <input type="button" value="%" onclick="display.value += '%' ">
+                    <input type="button" value="=" onclick="display.value = eval(display.value) " class=" otext-white bg-warning" >
+                    <a href="https://github.com/EslamEsam11" target="_blank"><p class="text-center text-secondary pt-2 pb-0">©Eslam Essam <span class="text-warning">2024</span></p></a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
